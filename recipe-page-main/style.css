@@ -1,0 +1,137 @@
+:root {
+  --ff-serif: "Young Serif", serif;
+  --ff-outfit: "Outfit", serif;
+
+  --fw-normal: 400;
+  --fw-semi: 600;
+  --fw-bold: 700;
+
+  --fs-400: 1rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.75rem;
+  --fs-900: 2.5rem;
+
+  --clr-stone-100: hsl(30, 54%, 90%);
+  --clr-stone-150: hsl(30, 18%, 87%);
+  --clr-stone-600: hsl(30, 10%, 34%);
+  --clr-stone-900: hsl(24, 5%, 18%);
+
+  --clr-brown-800: hsl(14, 45%, 36%);
+
+  /* for cook time */
+  --clr-rose-50: hsl(330, 100%, 98%); 
+  /* for h2, bullet, number and nutrition data */
+  --clr-rose-800: hsl(332, 51%, 32%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+html {
+  font-family: var(--ff-outfit);
+  font-weight: var(--fw-normal);
+  font-size: var(--fw-normal);
+  line-height: 1.7;
+  background-color: var(--clr-stone-100);
+}
+
+h1, 
+h2 {
+  font-family: var(--ff-serif);
+  font-weight: var(--fw-normal);
+  color: var(--clr-brown-800)
+}
+
+ul,
+ol {
+  padding: 0 1rem;
+}
+
+/* ul {
+  margin-left: 20px;
+}
+
+ol {
+  margin-left: 30px;
+} */
+
+li {
+  padding-left: 10px;
+}
+
+li::marker {
+  color: var(--clr-rose-800);
+  font-weight: var(--fw-semi);
+}
+
+span {
+  font-weight: var(--fw-semi);
+}
+
+h2 {
+  font-size: var(--fs-600);
+  line-height: 4rem;
+}
+
+body {
+  max-width: 735px;
+  margin-inline: auto;
+  margin-block: 125px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 25px;
+  color: var(--clr-stone-600)
+}
+
+header h1 {
+  font-size: var(--fs-900);
+  color: var(--clr-stone-900);
+  line-height: 2.25;
+}
+
+hr {
+  border: none;
+  background-color: var(--clr-stone-150);
+  height: 1px;
+  margin: 30px auto;
+}
+
+.time-container {
+  background-color: var(--clr-rose-50);
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  line-height: 2rem;
+  padding-top: 0;
+
+  h2 {
+    color: var(--clr-rose-800);
+    font-family: var(--ff-outfit);
+    font-size: var(--fs-500);
+    font-weight: var(--fw-semi);
+  }
+}
+
+.ingredients {
+  line-height: 2rem;
+}
+
+.nutrition {
+  line-height: 2rem;
+  
+}
